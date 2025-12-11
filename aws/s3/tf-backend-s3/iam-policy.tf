@@ -1,8 +1,8 @@
 resource "aws_iam_user_policy" "s3_backend" {
-    name = "S3ListOnlyPolicy"
-    # link to AWS IAM identity
-    user = aws_iam_user.abc.name
-    policy = <<EOF
+  name = "S3ListOnlyPolicy"
+  # link to AWS IAM identity
+  user   = aws_iam_user.abc.name
+  policy = <<EOF
 {
   "Version": "2012-10-17",
   "Statement": [
