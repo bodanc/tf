@@ -1,4 +1,4 @@
-# 
+# enabling DynamoDB state locking is now deprecated => move to using s3 lockfile
 terraform {
 
   required_providers {
